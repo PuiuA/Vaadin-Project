@@ -1,8 +1,33 @@
 /* Example: CSS class name to center align the content . */
 .centered-content {
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 650px;
+  background-color:#C3D3FF;
+  margin-top: 80px;
+  border-radius:10px;
 }
+
+.main-view-paragraph{
+    font-size:70px;
+    margin:5px;
+}
+.sign-in-view-div{
+    margin:15px;
+    background-color:#EEF2FF;
+    border-radius:10px;
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    width: 90%;
+}
+.username-input-field, .password-input-field{
+    width: 90%;
+}
+
+.sign-in-button{
+    color: #B2C5FC;
+}
+
 
 /* Example: the style is applied only to the textfields which have the `bordered` class name. */
 vaadin-text-field.bordered::part(input-field) {
