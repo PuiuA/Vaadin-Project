@@ -97,3 +97,14 @@ To use it from the command line, run `mvn spotless:apply`
 - Find Add-ons at [vaadin.com/directory](https://vaadin.com/directory).
 - Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
 - Report issues, create pull requests in [GitHub](https://github.com/vaadin/platform).
+
+- sql:
+CREATE TABLE tasks (
+    id BIGINT NOT NULL AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    description VARCHAR(2000),
+    creation_date DATE,
+    completed TINYINT(1) DEFAULT 0,
+    PRIMARY KEY (id)
+);
+
