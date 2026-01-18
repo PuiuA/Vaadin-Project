@@ -23,11 +23,11 @@
 .username-input-field, .password-input-field{
     width: 90%;
 }
-
 .sign-in-button{
-    color: #B2C5FC;
+    background: #2b3a67;
+    color: white;
+    border-radius: 8px;
 }
-
 
 /* Example: the style is applied only to the textfields which have the `bordered` class name. */
 vaadin-text-field.bordered::part(input-field) {
