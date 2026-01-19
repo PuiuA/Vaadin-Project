@@ -23,6 +23,16 @@ public class Task {
     @Column(name = "completed")
     private Boolean completed = false;
 
+    public Task(Long id, String title, String description, LocalDate creationDate, Boolean completed) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.creationDate = creationDate;
+        this.completed = completed;
+    }
+
+    public Task() {}
+
     public Long getId() {
         return id;
     }
