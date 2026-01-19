@@ -3,6 +3,7 @@ package com.example.application.views;
 import com.example.application.model.Task;
 import com.example.application.service.TaskService;
 import com.vaadin.flow.component.button.Button;
+import com.vaadin.flow.component.checkbox.Checkbox;
 import com.vaadin.flow.component.confirmdialog.ConfirmDialog;
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.html.H2;
@@ -45,7 +46,7 @@ public class TasksView extends VerticalLayout {
                 .setHeader("Created").setAutoWidth(true);
 
         grid.addColumn(new ComponentRenderer<>(task -> {
-            com.vaadin.flow.component.checkbox.Checkbox cb = new com.vaadin.flow.component.checkbox.Checkbox();
+            Checkbox cb = new Checkbox();
             cb.setValue(Boolean.TRUE.equals(task.getCompleted()));
             cb.addValueChangeListener(e -> {
                 task.setCompleted(e.getValue());
