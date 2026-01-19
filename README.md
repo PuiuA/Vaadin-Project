@@ -106,5 +106,13 @@ CREATE TABLE tasks (
     creation_date DATE,
     completed TINYINT(1) DEFAULT 0,
     PRIMARY KEY (id)
+
 );
+
+container:
+docker run -d --name vaadin_db `
+  -e MYSQL_ROOT_PASSWORD=secret `
+  -e MYSQL_DATABASE=vaadin_db `
+  -p 3306:3306 `
+  mysql:latest
 
